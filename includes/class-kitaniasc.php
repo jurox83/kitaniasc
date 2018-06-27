@@ -119,7 +119,7 @@ class kitaniaSC {
 
 	public function render_shortcode()
 	{
-		return "<pre>".get_option( 'wpt_text_block' ) ."</pre>";
+		return get_option( 'wpt_text_block' );
 	}
 
 	/**
