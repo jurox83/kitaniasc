@@ -113,13 +113,20 @@ class kitaniaSC {
 		$this->load_plugin_textdomain();
 		add_action( 'init', array( $this, 'load_localisation' ), 0 );
 
+		// Here my code starts
 		add_shortcode('textblock', array( $this, 'render_shortcode'));
+		add_filter( 'default_content', array( $this, 'default_postcontent') );
 
 	} // End __construct ()
 
 	public function render_shortcode()
 	{
 		return get_option( 'wpt_text_block' );
+	}
+
+	public function default_postcontent()
+	{
+		return "[textblock]\n<p></p>";
 	}
 
 	/**
