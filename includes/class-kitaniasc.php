@@ -119,7 +119,7 @@ class kitaniaSC {
 
 	public function render_shortcode()
 	{
-		echo "<p>testing output</p>";
+		return "<p>testing output</p>";
 	}
 
 	/**
