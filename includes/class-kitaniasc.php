@@ -119,7 +119,7 @@ class kitaniaSC {
 
 	public function render_shortcode()
 	{
-		return "<p>testing output</p>";
+		return "<pre>".print_r($this->settings['standard'],1)."</pre>";
 	}
 
 	/**
