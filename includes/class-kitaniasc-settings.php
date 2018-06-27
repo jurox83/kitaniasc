@@ -67,7 +67,7 @@ class kitaniaSC_Settings {
 	 * @return void
 	 */
 	public function add_menu_item () {
-		$page = add_options_page( __( 'Plugin Settings', 'kitaniasc' ) , __( 'Plugin Settings', 'kitaniasc' ) , 'manage_options' , $this->parent->_token . '_settings' ,  array( $this, 'settings_page' ) );
+		$page = add_options_page( __( 'Kitania Shortcode', 'kitaniasc' ) , __( 'Plugin Settings', 'kitaniasc' ) , 'manage_options' , $this->parent->_token . '_settings' ,  array( $this, 'settings_page' ) );
 		add_action( 'admin_print_styles-' . $page, array( $this, 'settings_assets' ) );
 	}
 
@@ -109,7 +109,7 @@ class kitaniaSC_Settings {
 
 		$settings['standard'] = array(
 			'title'					=> __( 'Standard', 'kitaniasc' ),
-			'description'			=> __( 'These are fairly standard form input fields.', 'kitaniasc' ),
+			'description'			=> __( 'Kitania Shortcode Einstellungen.', 'kitaniasc' ),
 			'fields'				=> array(
 				array(
 					'id' 			=> 'text_block',
