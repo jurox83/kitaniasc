@@ -118,6 +118,14 @@ class kitaniaSC_Settings {
 					'type'			=> 'textarea',
 					'default'		=> '',
 					'placeholder'	=> __( '<p>Beispielcode</p>', 'kitaniasc' )
+				),
+				array(
+					'id' 			=> 'text_template',
+					'label'			=> __( 'Textvorlage' , 'kitaniasc' ),
+					'description'	=> __( 'HTML code, der als Vorlage dient.', 'kitaniasc' ),
+					'type'			=> 'textarea',
+					'default'		=> '',
+					'placeholder'	=> __( '<p>Beispielcode</p>', 'kitaniasc' )
 				)
 			)
 		);
