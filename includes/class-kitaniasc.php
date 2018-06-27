@@ -112,7 +112,15 @@ class kitaniaSC {
 		// Handle localisation
 		$this->load_plugin_textdomain();
 		add_action( 'init', array( $this, 'load_localisation' ), 0 );
+
+		add_shortcode('textblock', array( $this, 'render_shortcode'));
+
 	} // End __construct ()
+
+	public function render_shortcode()
+	{
+		echo "<p>testing output</p>";
+	}
 
 	/**
 	 * Wrapper function to register a new post type
